@@ -1,0 +1,69 @@
+:root {
+    /* === COLORS === */
+    /* Primary: Electric Cyan (Focus/Action) */
+    --color-orange-500: #08F7FE;
+
+    /* Secondary: Neon Purple (Gradients/Accents) */
+    --color-orange-600: #FE53BB;
+
+    /* Gradient End: Deep Violet (Depth) */
+    --color-red-600: #7122FA;
+
+    /* Backgrounds (Keep Deep for Contrast) */
+    --color-bg-primary: #050505;
+    --color-bg-secondary: #0a0a0a;
+    --color-bg-tertiary: #111111;
+    --color-bg-card: rgba(20, 20, 20, 0.6);
+
+    /* Text */
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e2e8f0;
+    --color-text-tertiary: #94a3b8;
+
+    /* Tech Stack Colors */
+    --color-react: #61DAFB;
+    --color-nodejs: #68A063;
+    --color-mongodb: #47A248;
+    --color-javascript: #F7DF1E;
+    --color-typescript: #3178C6;
+    --color-python: #3776AB;
+
+    /* === SPACING === */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+    --spacing-2xl: 8rem;
+
+    /* === TYPOGRAPHY === */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+
+    /* === BORDER RADIUS === */
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 1.5rem;
+    --radius-xl: 2rem;
+    --radius-full: 9999px;
+
+    /* === TRANSITIONS === */
+    --transition-fast: 150ms ease;
+    --transition-base: 300ms ease;
+    --transition-slow: 500ms ease;
+
+    /* === SHADOWS === */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    /* The "Glow" - Updated to Cyan */
+    --shadow-glow-orange: 0 0 25px rgba(8, 247, 254, 0.4);
+}

@@ -1,0 +1,96 @@
+/* === SKILLS SECTION === */
+.skills-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-bg-primary);
+    overflow: hidden;
+    position: relative;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.skills-track {
+    display: flex;
+    gap: var(--spacing-md);
+    width: max-content;
+    /* Animation is handled by JS cloning or purely CSS if width is known */
+}
+
+/* Individual Skill Item */
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    transition: all var(--transition-base);
+    backdrop-filter: blur(5px);
+}
+
+.skill-item:hover {
+    background: rgba(255, 107, 53, 0.1);
+    border-color: var(--color-orange-500);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.2);
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+    transition: color var(--transition-base);
+}
+
+.skill-item:hover .skill-icon {
+    color: var(--color-orange-500);
+}
+
+.skill-name {
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+/* Animation Classes */
+.loop-scroll-left {
+    animation: scrollLeft 40s linear infinite;
+}
+
+.loop-scroll-right {
+    animation: scrollRight 40s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Speed Adjustment */
+@media (max-width: 768px) {
+
+    .loop-scroll-left,
+    .loop-scroll-right {
+        animation-duration: 30s;
+    }
+}

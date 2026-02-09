@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "E-Commerce Dashboard",
+        "description": "A comprehensive dashboard for managing products, orders, and analytics. Features real-time data visualization and dark mode.",
+        "image": "assets/images/projects/project-1.jpg",
+        "tags": [
+            "React",
+            "Tailwind",
+            "Recharts",
+            "Node.js"
+        ],
+        "github": "#",
+        "live": "#"
+    },
+    {
+        "id": 2,
+        "title": "AI Content Generator",
+        "description": "SaaS application that uses OpenAI's GPT-3 to generate marketing copy and blog posts. Includes user authentication and subscription management.",
+        "image": "assets/images/projects/project-2.jpg",
+        "tags": [
+            "Next.js",
+            "OpenAI API",
+            "Stripe",
+            "PostgreSQL"
+        ],
+        "github": "#",
+        "live": "#"
+    },
+    {
+        "id": 3,
+        "title": "Task Management App",
+        "description": "Collaborative task manager with drag-and-drop interface, team workspaces, and real-time updates using WebSockets.",
+        "image": "assets/images/projects/project-3.jpg",
+        "tags": [
+            "Vue.js",
+            "Firebase",
+            "Socket.io",
+            "Sass"
+        ],
+        "github": "#",
+        "live": "#"
+    }
+]

@@ -1,0 +1,105 @@
+/* === UI/UX Pro Max Theme: Neon Syntax === */
+
+:root {
+    /* Typography Overrides */
+    --font-display: 'Outfit', sans-serif;
+    --font-primary: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Glassmorphism Tokens */
+    --glass-bg: rgba(20, 20, 20, 0.65);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-blur: 16px;
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    /* Spacing overrides for modern feel */
+    --navbar-height: 80px;
+}
+
+/* === UTILITIES === */
+
+/* Pro Glass Effect */
+.glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+}
+
+.glass-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-lg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -10px rgba(8, 247, 254, 0.15);
+    /* Cyan glow hint */
+    border-color: rgba(8, 247, 254, 0.3);
+}
+
+/* Floating Navbar Style (Rule 347) */
+.navbar-floating {
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 3rem);
+    max-width: 1200px;
+    border-radius: 9999px;
+    /* Pill shape */
+    padding: 0.75rem 2rem;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    background: rgba(5, 5, 5, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-floating.scrolled {
+    background: rgba(5, 5, 5, 0.9);
+    border-color: var(--color-orange-500);
+    /* Cyan border on scroll */
+    box-shadow: 0 10px 30px -10px rgba(8, 247, 254, 0.2);
+}
+
+/* Skill Badge Pro Style */
+.skill-badge {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+/* Hero Title - Neon Glow */
+.hero-title {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.highlight-text {
+    background: linear-gradient(135deg, var(--color-orange-500) 0%, var(--color-orange-600) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 20px rgba(8, 247, 254, 0.3));
+}
+
+/* Button Glow */
+.btn-primary {
+    box-shadow: 0 0 15px rgba(8, 247, 254, 0.4);
+    background: var(--color-orange-500);
+    color: #000;
+    /* Black text on Cyan for contrast */
+    font-weight: 700;
+    border: none;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 30px rgba(8, 247, 254, 0.6);
+    transform: translateY(-2px);
+}
