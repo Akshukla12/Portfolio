@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Frontend-focused Web Developer exploring AI & automation. View my portfolio of real-world web applications and projects.">
+    <meta name="keywords" content="web developer, frontend developer, AI, automation, portfolio, JavaScript, HTML, CSS">
+    <meta name="author" content="Your Name">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:title" content="Your Name - Web Developer Portfolio">
+    <meta property="og:description" content="Frontend-focused Web Developer exploring AI & automation">
+    <meta property="og:image" content="https://yourwebsite.com/assets/images/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yourwebsite.com/">
+    <meta name="twitter:title" content="Your Name - Web Developer Portfolio">
+    <meta name="twitter:description" content="Frontend-focused Web Developer exploring AI & automation">
+    <meta name="twitter:image" content="https://yourwebsite.com/assets/images/og-image.jpg">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1e40af">
+    <meta name="color-scheme" content="light dark">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon.png">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts - Editorial Aesthetic -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Akash Shukla - Web Developer Portfolio</title>
+</head>
+
+<body>
+    <!-- Animated Backgrounds -->
+    <div class="animated-bg"></div>
+
+    <!-- Floating Orbs -->
+    <div class="bg-orbs">
+        <div class="bg-orb"></div>
+        <div class="bg-orb"></div>
+        <div class="bg-orb"></div>
+    </div>
+
+    <!-- Spotlight Effect (follows mouse) -->
+    <div class="bg-spotlight" id="spotlight"></div>
+
+    <!-- Geometric Shapes -->
+    <div class="bg-shapes">
+        <div class="bg-shape bg-shape--circle"></div>
+        <div class="bg-shape bg-shape--square"></div>
+    </div>
+
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="progress-bar"
+        style="position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 9999; background: var(--color-border);">
+        <div class="progress-bar-fill progress-bar-animated" data-scroll-progress style="width: 0%;"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo" aria-label="Home">Akash Shukla</a>
+            </div>
+
+            <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span class="nav__toggle-icon"></span>
+            </button>
+
+            <ul class="nav__menu" id="nav-menu" role="list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link" aria-current="page">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#blog" class="nav__link">Blog</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                <svg class="theme-toggle__icon theme-toggle__icon--sun" xmlns="http://www.w3.org/2000/svg" width="20"
+                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-toggle__icon theme-toggle__icon--moon" xmlns="http://www.w3.org/2000/svg" width="20"
+                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title animate-fade-in-up">I build real-world web applications.</h1>
+                    <p class="hero__subtitle animate-fade-in-up stagger-2">Frontend-focused Web Developer exploring AI
+                        &amp; automation</p>
+                    <div class="hero__cta animate-fade-in-up stagger-3">
+                        <a href="#projects" class="btn btn--primary btn-press hover-lift" data-magnetic="0.3">View My
+                            Work</a>
+                        <a href="assets/resume/resume.pdf" class="btn btn--secondary btn-press hover-lift"
+                            download>Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section__title animate-on-scroll">About Me</h2>
+                <div class="about__content">
+                    <div class="about__image animate-on-scroll">
+                        <img src="assets/images/profile.jpg" alt="Your Name - Web Developer" width="400" height="400">
+                    </div>
+                    <div class="about__text animate-on-scroll">
+                        <p>I'm a frontend-focused web developer with a passion for creating intuitive, accessible, and
+                            performant user interfaces. My approach combines clean code with thoughtful design to build
+                            applications that users love.</p>
+
+                        <p>With a strong foundation in HTML, CSS, and JavaScript, I specialize in crafting responsive
+                            web experiences that work seamlessly across all devices. I believe in writing semantic,
+                            maintainable code and following web standards and best practices.</p>
+
+                        <p>Currently, I'm expanding my skill set into AI and automation, exploring how these
+                            technologies can enhance web development workflows and create smarter, more dynamic
+                            applications. I'm always learning, always building, and always looking for new challenges.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section__title scroll-reveal">Skills &amp; Technologies</h2>
+
+                <div class="skills__category">
+                    <h3 class="skills__category-title scroll-reveal">Core Skills</h3>
+                    <div class="skills__grid" data-stagger="100">
+                        <div class="skill-card">
+                            <div class="skill-card__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <h4 class="skill-card__title">HTML5 &amp; CSS3</h4>
+                            <p class="skill-card__description">Semantic markup, modern CSS features, Grid, Flexbox</p>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-card__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <h4 class="skill-card__title">JavaScript (ES6+)</h4>
+                            <p class="skill-card__description">Modern JavaScript, DOM manipulation, async programming
+                            </p>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-card__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                            <h4 class="skill-card__title">Responsive Design</h4>
+                            <p class="skill-card__description">Mobile-first approach, cross-browser compatibility</p>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-card__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h4 class="skill-card__title">UI/UX Design</h4>
+                            <p class="skill-card__description">User-centered design, accessibility, visual design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__category">
+                    <h3 class="skills__category-title scroll-reveal">Currently Learning</h3>
+                    <div class="skills__grid" data-stagger="100">
+                        <div class="skill-card skill-card--learning">
+                            <div class="skill-card__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                </svg>
+                            </div>
+                            <h4 class="skill-card__title">AI Agents</h4>
+                            <p class="skill-card__description">Exploring AI-powered automation and intelligent systems
+                            </p>
+                        </div>
+
+                        <div class="skill-card skill-card--learning">
+                            <div class="skill-card__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                </svg>
+                            </div>
+                            <h4 class="skill-card__title">Automation</h4>
+                            <p class="skill-card__description">Workflow automation, scripting, process optimization</p>
+                        </div>
+
+                        <div class="skill-card skill-card--learning">
+                            <div class="skill-card__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                            </div>
+                            <h4 class="skill-card__title">APIs &amp; Integration</h4>
+                            <p class="skill-card__description">RESTful APIs, data fetching, third-party integrations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section__title animate-on-scroll">Featured Projects</h2>
+                <p class="section__subtitle animate-on-scroll">Real-world applications built with modern web
+                    technologies</p>
+
+                <div class="projects__grid">
+                    <!-- Project 1 -->
+                    <article class="project-card animate-on-scroll">
+                        <div class="project-card__image">
+                            <img src="assets/images/projects/project-1.jpg" alt="Project 1 screenshot" width="600"
+                                height="400" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Project Title 1</h3>
+
+                            <div class="project-card__section">
+                                <h4 class="project-card__label">Problem</h4>
+                                <p>Brief description of the problem this project solves. What challenge did you address?
+                                </p>
+                            </div>
+
+                            <div class="project-card__section">
+                                <h4 class="project-card__label">Solution</h4>
+                                <p>How you approached and solved the problem. What was your methodology?</p>
+                            </div>
+
+                            <div class="project-card__section">
+                                <h4 class="project-card__label">Tech Used</h4>
+                                <ul class="project-card__tech" role="list">
+                                    <li class="tech-tag">HTML5</li>
+                                    <li class="tech-tag">CSS3</li>
+                                    <li class="tech-tag">JavaScript</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-card__section">
+                                <h4 class="project-card__label">Outcome</h4>
+                                <p>Results, learnings, and impact of the project.</p>
+                            </div>
+
+                            <div class="project-card__actions">
+                                <a href="https://example.com" class="btn btn--primary btn--small" target="_blank"
+                                    rel="noopener noreferrer">View Live Demo</a>
+                                <a href="https://github.com/yourusername/project" class="btn btn--secondary btn--small"
+                                    target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card animate-on-scroll">
+                        <div class="project-card__image">
+                            <img src="assets/images/projects/project-2.jpg" alt="Project 2 screenshot" width="600"
+                                height="400" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Project Title 2</h3>
+
+                            <div class="project-card__section">
+                                <h4 class="project-card__label">Problem</h4>
+                                <p>Brief description of the problem this project solves.</p>
+                            </div>
+
+                            <div class="project-card__section">
+                                <h4 class="project-card__label">Solution</h4>
+                                <p>How you approached and solved the problem.</p>
+                            </div>
+
+                            <div class="project-card__section">
+                                <h4 class="project-card__label">Tech Used</h4>
+                                <ul class="project-card__tech" role="list">
+                                    <li class="tech-tag">HTML5</li>
+                                    <li class="tech-tag">CSS3</li>
+                                    <li class="tech-tag">JavaScript</li>
+                                    <li class="tech-tag">API</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-card__section">
+                                <h4 class="project-card__label">Outcome</h4>
+                                <p>Results, learnings, and impact of the project.</p>
+                            </div>
+
+                            <div class="project-card__actions">
+                                <a href="https://example.com" class="btn btn--primary btn--small" target="_blank"
+                                    rel="noopener noreferrer">View Live Demo</a>
+                                <a href="https://github.com/yourusername/project" class="btn btn--secondary btn--small"
+                                    target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Add more project cards as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog section">
+            <div class="container">
+                <h2 class="section__title animate-on-scroll">Blog &amp; Learning Logs</h2>
+                <p class="section__subtitle animate-on-scroll">Documenting my journey and sharing insights</p>
+
+                <div id="blog-posts" class="blog__grid">
+                    <!-- Blog posts will be loaded dynamically via JavaScript -->
+                </div>
+
+                <div id="blog-empty" class="blog__empty" hidden>
+                    <p>No blog posts yet. Check back soon!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume section">
+            <div class="container">
+                <div class="resume__content animate-on-scroll">
+                    <h2 class="section__title">Resume</h2>
+                    <p class="resume__text">Download my resume to learn more about my experience, education, and
+                        qualifications.</p>
+                    <a href="assets/resume/resume.pdf" class="btn btn--primary" download>Download Resume (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section__title animate-on-scroll">Get In Touch</h2>
+                <p class="section__subtitle animate-on-scroll">Have a project in mind? Let's work together!</p>
+
+                <div class="contact__content">
+                    <form id="contact-form" class="contact__form animate-on-scroll" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" autocomplete="name" required
+                                aria-required="true">
+                            <span class="form-error" id="name-error" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" autocomplete="email"
+                                spellcheck="false" required aria-required="true">
+                            <span class="form-error" id="email-error" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" rows="5" required
+                                aria-required="true"></textarea>
+                            <span class="form-error" id="message-error" role="alert"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <span class="btn__text">Send Message</span>
+                            <span class="btn__loader" hidden aria-hidden="true"></span>
+                        </button>
+
+                        <div id="form-message" class="form-message" role="status" aria-live="polite"></div>
+                    </form>
+
+                    <div class="contact__info animate-on-scroll">
+                        <h3 class="contact__info-title">Connect With Me</h3>
+                        <ul class="contact__links" role="list">
+                            <li>
+                                <a href="mailto:your.email@example.com" class="contact__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <span>your.email@example.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/yourprofile" class="contact__link" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/yourusername" class="contact__link" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p class="footer__text">&copy; <span id="current-year"></span> Your Name. Built with HTML, CSS, and
+                JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- GSAP Library -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Animation Scripts -->
+    <script src="js/animations.js"></script>
+    <script src="js/gsap-animations.js"></script>
+    <script src="js/backgrounds.js"></script>
+
+    <!-- Three.js Animations (ES6 Modules) -->
+    <script type="module" src="js/threejs-background.js"></script>
+    <script type="module" src="js/threejs-skills.js"></script>
+    <script type="module" src="js/threejs-shapes.js"></script>
+</body>
+
+</html>

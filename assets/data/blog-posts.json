@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Building Accessible Web Forms: A Complete Guide",
+    "excerpt": "Learn how to create forms that work for everyone, including keyboard users and screen reader users. This guide covers semantic HTML, ARIA labels, and validation patterns.",
+    "date": "2026-02-01",
+    "image": "assets/images/blog/blog-1.jpg",
+    "category": "Accessibility"
+  },
+  {
+    "id": 2,
+    "title": "CSS Grid vs Flexbox: When to Use Each",
+    "excerpt": "Understanding the differences between CSS Grid and Flexbox helps you choose the right layout tool for your project. Here's a practical comparison with real-world examples.",
+    "date": "2026-01-25",
+    "image": "assets/images/blog/blog-2.jpg",
+    "category": "CSS"
+  },
+  {
+    "id": 3,
+    "title": "My Journey into AI and Automation",
+    "excerpt": "Exploring how AI agents and automation tools are changing web development. From simple scripts to intelligent assistants, here's what I've learned so far.",
+    "date": "2026-01-18",
+    "image": "assets/images/blog/blog-3.jpg",
+    "category": "AI"
+  },
+  {
+    "id": 4,
+    "title": "Performance Optimization: Making Your Site Lightning Fast",
+    "excerpt": "A practical guide to web performance optimization. Learn about lazy loading, code splitting, image optimization, and achieving a 90+ Lighthouse score.",
+    "date": "2026-01-10",
+    "image": "assets/images/blog/blog-4.jpg",
+    "category": "Performance"
+  }
+]
